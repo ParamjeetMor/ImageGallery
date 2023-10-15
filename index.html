@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        background: linear-gradient(to right, green, black);
+    }
+
+    .left {
+        text-align: center;
+        width: 30%;
+    }
+
+    .left h2 {
+        font-size: 50px;
+        color: white;
+        padding: 15px;
+    }
+
+    .left p {
+        font-size: 30px;
+        color: #a59b9b;
+    }
+
+    .box {
+        background-position: top;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       color: white;
+       font-size: 1.5rem;
+       background-color: black;
+      background-blend-mode:luminosity;
+      background-size: cover;
+
+    }
+    .box:hover{
+        background-blend-mode: difference;
+        transition:all 1s ease-in-out;
+        background-position: center;
+    }
+
+    .image {
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        grid-auto-rows: 150px;
+    }
+
+    .col2 {
+        grid-column: span 2;
+    }
+
+    .row2 {
+        grid-row: span 2;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <h2>Nature Image</h2>
+            <p>
+                God is the friend of silence. See how nature trees, flowers, grass- grows in silence; see the stars,
+                the moon and the sun, how they move in silence… We need silence to be able to touch souls</p>
+        </div>
+        <div class="image">
+            <div class="box col2"
+                style="background-image: url(https://images.unsplash.com/photo-1420593248178-d88870618ca0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fHRyZWVzfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60);">
+                Trees</div>
+            <div class="box"
+                style="background-image: url(https://images.unsplash.com/photo-1552728125-934ecb880061?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTc5fHxyYWlufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60);">
+                Rain</div>
+            <div class="box"
+                style="background-image: url(https://plus.unsplash.com/premium_photo-1674917000586-b7564f21540e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80);">
+                Mountain</div>
+            <div class="box row2"
+                style="background-image: url(https://plus.unsplash.com/premium_photo-1666323594456-cd1b09b2cbf4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fG9jZWFufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60);">
+                Ocean</div>
+            <div class="box row2"
+                style="background-image: url(https://images.unsplash.com/photo-1523224949444-170258978eef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fHdhdGVyZmFsbHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60);">
+                Waterfall</div>
+            <div class="box row2"
+                style="background-image: url(https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YW5pbWFsfGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60);">
+                Animal</div>
+            <div class="box col2"
+                style="background-image: url(https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb3dlcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=400&q=60);">
+                Flower</div>
+        </div>
+    </div>
+</body>
+
+</html>
